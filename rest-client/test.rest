@@ -1,0 +1,8 @@
+POST  http://localhost:3000/post
+Content-Type: application/json
+# Authorization: Bearer ajfsifskafjskjksfs
+
+{
+    "name": "test",
+    "age": 20
+}
