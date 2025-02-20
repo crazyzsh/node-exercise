@@ -66,6 +66,12 @@ module.exports = { presets };
 npx babel src --out-dir lib
 ```
 
+### babel-loader
+
+```bash
+pnpm add --save-dev babel-loader
+```
+
 ## 项目最佳实践
 
 例如 Array.findLastIndex，该方法在 safari 15.4 版本才开始支持，此时需配置 babel 配置文件如下
