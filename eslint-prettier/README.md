@@ -92,7 +92,7 @@
 
 > 要在界面中实时的看到语法检查信息，必须安装好 npm 相应的库，以及安装好 vscode 中的`eslint` 插件，二者缺一不可。
 
-如果安装好了`eslint` 插件，配置好了`.eslintrc.xxx` 配置文件，开启了
+PS：注意及时更新 vscode，版本过旧可能会影响 eslint 插件失效。
 
 ```javascript
 module.exports = {
@@ -109,8 +109,10 @@ module.exports = {
     'no-var': 'error', // 禁止使用 var
     'no-multiple-empty-lines': ['error', { max: 1 }], // 限制连续空行数
     eqeqeq: ['warn', 'always'], // 要求使用 === 而不是 ==
+    indent: ['error', 2, { SwitchCase: 1 }], // 缩进问题+配置eslint识别switch语句缩进为一个单位
+    'arrow-parens': 0, // 禁用箭头函数参数的圆括号（即箭头函数如果只有一个参数时，不强制使用括号）。
   },
-}
+};
 ```
 
 ## typescript

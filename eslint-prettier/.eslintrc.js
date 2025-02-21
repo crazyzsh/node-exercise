@@ -12,5 +12,6 @@ module.exports = {
     'no-var': 'error', // 禁止使用 var
     'no-multiple-empty-lines': ['error', { max: 1 }], // 限制连续空行数
     eqeqeq: ['warn', 'always'], // 要求使用 === 而不是 ==
+    indent: ['error', 2, { SwitchCase: 1 }],// 缩进问题+配置eslint识别switch语句缩进为一个单位
   },
 }
